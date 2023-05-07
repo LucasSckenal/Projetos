@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="icon" type="image/png" href="img/13510.png">
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <title>Music</title>
+</head>
+
+<body>
+   <header>
+      <nav class="header d-flex">
+         <div action="/search" method="get">
+            <div class="search-box">
+               <input class="search-txt" type="text" name="query" placeholder="Pesquisar...">
+               <a href="#" class="search-btn">
+                  <ion-icon name="search-outline"></ion-icon>
+               </a>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-8 offset-sm-2">
+            <div class="spoty-container">
+               <div class="box-2 d-flex justify-content-between">
+                  <div class="col-sm-4">
+                     <button><ion-icon name="caret-back-outline" class="switch left"></ion-icon>
+                     </button>
+                  </div>
+                  <div class="col-sm-4 text-center align-self-center">
+                     <div class="spoty">
+                        <img src="img/design-1.png" alt="" class="Music-Banner" id="music-img">
+                        <h1 id="music-title">False Alarme</h1>
+                        <h2 id="artistas">Connor Price, Lucca DL</h2>
+
+                        <nav>
+                           <audio id="musica" src="music/videoplayback.3gpp"></audio>
+                           <button><ion-icon name="play-back-outline" class="voltar"></ion-icon></button>
+                           <button><ion-icon name="play-outline" class="play-stop"></ion-icon></button>
+                           <button><ion-icon name="play-forward-outline" class="avancar"></ion-icon></button>
+
+                        </nav>
+                        <div class="bar-timer">
+                           <div class="ball"></div>
+                        </div>
+                        <nav class="time">
+                           <p><span id="cronometro">0:00</span></p>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <button><ion-icon name="caret-forward-outline" class="switch right"></ion-icon></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer><img src="img/Logo.png" alt="Logo" title="LS" class="Logo">
+         <nav class="foterbar">
+            <li><a href="https://www.instagram.com/lucas.sckenal/"><ion-icon name="logo-instagram" class="footer-icon"
+                     title="instagram"></ion-icon></a></li>
+            <li><a href="https://twitter.com/ikkiSl0w"><ion-icon name="logo-twitter" class="footer-icon"
+                     title="twitter"></ion-icon></a></li>
+            <li><a href="https://twitter.com/ikkiSl0w"><ion-icon name="logo-github" class="footer-icon"
+                     title="Github"></ion-icon></a></li>
+         </nav>
+      </footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
